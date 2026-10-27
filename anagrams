@@ -1,3 +1,7 @@
+"""
+Given two strings, return True if they are anagrams and False otherwise.
+"""
+#solution 1
 def isAnagram(first, second):
     if len(first) != len(second):
         return False
@@ -19,7 +23,7 @@ def isAnagram(first, second):
     return seenFirst == seenSecond
 
 
-
+#test cases
 print(isAnagram("listen", "silent"))  # Expected: True
 print(isAnagram("hello", "world"))    # Expected: False
 print(isAnagram("aab", "aba"))        # Expected: True

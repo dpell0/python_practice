@@ -1,3 +1,10 @@
+"""
+Given a string, return the index of the first character that appears
+exactly once. Return -1 if no unique character exist.
+
+Case sensitive and spaces count.
+"""
+#solution 1
 def firstUnique(text):
     seen = {}
 
@@ -16,6 +23,7 @@ def firstUnique(text):
 
     return -1
 
+#test cases
 print(firstUnique("leetcode"))      # Expected: 0
 print(firstUnique("loveleetcode"))  # Expected: 2
 print(firstUnique("aab"))            # Expected: 2
