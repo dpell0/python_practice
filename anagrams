@@ -1,0 +1,29 @@
+def isAnagram(first, second):
+    if len(first) != len(second):
+        return False
+
+    seenFirst = {}
+    seenSecond = {}
+
+    for i in range(len(first)):
+        if first[i] in seenFirst:
+            seenFirst[first[i]] += 1
+        else:
+            seenFirst[first[i]] = 1
+
+        if second[i] in seenSecond:
+            seenSecond[second[i]] += 1
+        else:
+            seenSecond[second[i]] = 1
+
+    return seenFirst == seenSecond
+
+
+
+print(isAnagram("listen", "silent"))  # Expected: True
+print(isAnagram("hello", "world"))    # Expected: False
+print(isAnagram("aab", "aba"))        # Expected: True
+print(isAnagram("aab", "abb"))        # Expected: False
+print(isAnagram("ab", "abc"))         # Expected: False
+print(isAnagram("", ""))             # Expected: True
+print(isAnagram("aaa", "aaa"))        # Expected: True
