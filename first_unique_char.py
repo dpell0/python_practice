@@ -24,9 +24,9 @@ def firstUnique(text):
     return -1
 
 #test cases
-print(firstUnique("leetcode"))      # Expected: 0
-print(firstUnique("loveleetcode"))  # Expected: 2
-print(firstUnique("aab"))            # Expected: 2
-print(firstUnique("aabb"))           # Expected: -1
-print(firstUnique(""))               # Expected: -1
-print(firstUnique("z"))              # Expected: 0
+print("expected: 0 OUTPUT '", firstUnique("leetcode"), "'")
+print("expected: 2 OUTPUT '", firstUnique("loveleetcode"), "'")
+print("expected: 2 OUTPUT '", firstUnique("aab"), "'")
+print("expected: -1 OUTPUT '", firstUnique("aabb"), "'")
+print("expected: -1 OUTPUT '", firstUnique(""), "'")
+print("expected: 0 OUTPUT '", firstUnique("z"), "'")
